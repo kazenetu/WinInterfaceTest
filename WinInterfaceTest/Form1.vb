@@ -37,4 +37,31 @@ Public Class Form1
         Label1.Text = sb.ToString()
 
     End Sub
+
+    ''' <summary>
+    ''' Sample1:InterfaceのList
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub InterfaceList_Click(sender As Object, e As EventArgs) Handles InterfaceList.Click
+
+        ' 処理前データからInterfaceListを作成
+        Dim intarfaceList As New List(Of ICommonClass)
+        For Each classA In srClasscAList
+            intarfaceList.Add(New ClassAEX(classA))
+        Next
+        For Each classB In srClasscBList
+            intarfaceList.Add(New ClassBEX(classB))
+        Next
+
+        ' インターフェースのリストの内容を表示
+        Dim sb = New StringBuilder()
+        For Each classEx In intarfaceList
+            sb.AppendFormat("{0}  [{1}]{2}", classEx.GetType().Name, classEx.Name, Environment.NewLine)
+        Next
+        MessageBox.Show(sb.ToString())
+
+    End Sub
+
+
 End Class

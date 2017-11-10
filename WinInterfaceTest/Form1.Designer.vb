@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.InterfaceList = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -34,11 +35,21 @@ Partial Class Form1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Label1"
         '
+        'InterfaceList
+        '
+        Me.InterfaceList.Location = New System.Drawing.Point(38, 163)
+        Me.InterfaceList.Name = "InterfaceList"
+        Me.InterfaceList.Size = New System.Drawing.Size(144, 23)
+        Me.InterfaceList.TabIndex = 2
+        Me.InterfaceList.Text = "InterfaceのList"
+        Me.InterfaceList.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 414)
+        Me.Controls.Add(Me.InterfaceList)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -47,4 +58,5 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Label1 As Label
+    Friend WithEvents InterfaceList As Button
 End Class
