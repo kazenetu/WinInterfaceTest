@@ -1,3 +1,3 @@
 ﻿Public Interface ICommonClass
-    Property Name
+    Property Name As String
 End Interface
