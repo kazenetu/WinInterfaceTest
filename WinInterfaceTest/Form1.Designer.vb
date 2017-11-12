@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.InterfaceList = New System.Windows.Forms.Button()
+        Me.genericList = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,11 +45,21 @@ Partial Class Form1
         Me.InterfaceList.Text = "InterfaceのList"
         Me.InterfaceList.UseVisualStyleBackColor = True
         '
+        'genericList
+        '
+        Me.genericList.Location = New System.Drawing.Point(243, 163)
+        Me.genericList.Name = "genericList"
+        Me.genericList.Size = New System.Drawing.Size(144, 23)
+        Me.genericList.TabIndex = 3
+        Me.genericList.Text = "genericListで表示"
+        Me.genericList.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 414)
+        Me.Controls.Add(Me.genericList)
         Me.Controls.Add(Me.InterfaceList)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
@@ -59,4 +70,5 @@ Partial Class Form1
     End Sub
     Friend WithEvents Label1 As Label
     Friend WithEvents InterfaceList As Button
+    Friend WithEvents genericList As Button
 End Class

@@ -48,10 +48,10 @@ Public Class Form1
         ' 処理前データからInterfaceListを作成
         Dim intarfaceList As New List(Of ICommonClass)
         For Each classA In srClasscAList
-            intarfaceList.Add(New ClassAEX(classA))
+            intarfaceList.Add(ClassUtility.Create(classA))
         Next
         For Each classB In srClasscBList
-            intarfaceList.Add(New ClassBEX(classB))
+            intarfaceList.Add(ClassUtility.Create(classB))
         Next
 
         ' インターフェースのリストの内容を表示
@@ -63,5 +63,29 @@ Public Class Form1
 
     End Sub
 
+    ''' <summary>
+    ''' Sample2:GenericのList
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub genericList_Click(sender As Object, e As EventArgs) Handles genericList.Click
+
+        ' 処理前データからInterfaceListを作成
+        Dim intarfaceList As New List(Of ICommonClass)
+        For Each classA In srClasscAList
+            intarfaceList.Add(ClassUtility.CreateEx(classA))
+        Next
+        For Each classB In srClasscBList
+            intarfaceList.Add(ClassUtility.CreateEx(classB))
+        Next
+
+        ' インターフェースのリストの内容を表示
+        Dim sb = New StringBuilder()
+        For Each classEx In intarfaceList
+            sb.AppendFormat("{0}  [{1}]{2}", classEx.GetType().Name, classEx.Name, Environment.NewLine)
+        Next
+        MessageBox.Show(sb.ToString())
+
+    End Sub
 
 End Class
