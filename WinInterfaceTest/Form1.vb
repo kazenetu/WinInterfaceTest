@@ -73,10 +73,10 @@ Public Class Form1
         ' 処理前データからInterfaceListを作成
         Dim intarfaceList As New List(Of ICommonClass)
         For Each classA In srClasscAList
-            intarfaceList.Add(ClassUtility.CreateEx(classA))
+            intarfaceList.Add(ClassEXFactory.Create(classA))
         Next
         For Each classB In srClasscBList
-            intarfaceList.Add(ClassUtility.CreateEx(classB))
+            intarfaceList.Add(ClassEXFactory.Create(classB))
         Next
 
         ' インターフェースのリストの内容を表示
