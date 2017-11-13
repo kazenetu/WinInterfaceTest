@@ -81,6 +81,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SampleGeneric\ClassEx.vb" />
+    <Compile Include="SampleGeneric\ClassEXFactory.vb" />
     <Compile Include="SampleIntarfaceList\ClassAEX.vb" />
     <Compile Include="SampleIntarfaceList\ClassBEX.vb" />
     <Compile Include="Interfaces\ICommonClass.vb" />
