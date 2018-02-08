@@ -81,8 +81,8 @@ Public Class Form1
 
         ' インターフェースのリストの内容を表示
         Dim sb = New StringBuilder()
-        For Each classEx In intarfaceList
-            sb.AppendFormat("{0}  [{1}]{2}", classEx.GetType().GenericTypeArguments(0).Name, classEx.Name, Environment.NewLine)
+        For Each genericInstance In intarfaceList
+            sb.AppendFormat("{0}  [{1}]{2}", genericInstance.GetType().GenericTypeArguments(0).Name, genericInstance.Name, Environment.NewLine)
         Next
         MessageBox.Show(sb.ToString())
 
