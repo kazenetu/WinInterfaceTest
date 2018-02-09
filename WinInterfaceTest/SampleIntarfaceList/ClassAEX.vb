@@ -1,12 +1,23 @@
-﻿Public Class ClassAEX
+﻿''' <summary>
+''' ClassA内包クラス
+''' </summary>
+Public Class ClassAEX
     Implements ICommonClass
 
     Private target As ClassA = Nothing
 
+    ''' <summary>
+    ''' コンストラクタ
+    ''' </summary>
+    ''' <param name="target">既存クラス</param>
     Public Sub New(ByRef target As ClassA)
         Me.target = target
     End Sub
 
+    ''' <summary>
+    ''' 名前プロパティ
+    ''' </summary>
+    ''' <returns>名前</returns>
     Public Property Name As String Implements ICommonClass.Name
         Get
             Return target.Name

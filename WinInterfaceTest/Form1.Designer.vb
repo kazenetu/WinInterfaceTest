@@ -40,18 +40,18 @@ Partial Class Form1
         '
         Me.InterfaceList.Location = New System.Drawing.Point(38, 163)
         Me.InterfaceList.Name = "InterfaceList"
-        Me.InterfaceList.Size = New System.Drawing.Size(144, 23)
+        Me.InterfaceList.Size = New System.Drawing.Size(188, 23)
         Me.InterfaceList.TabIndex = 2
-        Me.InterfaceList.Text = "InterfaceのList"
+        Me.InterfaceList.Text = "サンプル1：既存クラスの内包クラス"
         Me.InterfaceList.UseVisualStyleBackColor = True
         '
         'genericList
         '
         Me.genericList.Location = New System.Drawing.Point(243, 163)
         Me.genericList.Name = "genericList"
-        Me.genericList.Size = New System.Drawing.Size(144, 23)
+        Me.genericList.Size = New System.Drawing.Size(220, 23)
         Me.genericList.TabIndex = 3
-        Me.genericList.Text = "genericListで表示"
+        Me.genericList.Text = "サンプル2：既存クラス用ジェネクスクラス"
         Me.genericList.UseVisualStyleBackColor = True
         '
         'Form1

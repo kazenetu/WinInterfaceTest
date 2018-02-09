@@ -1,7 +1,11 @@
-﻿Public Class ClassUtility
+﻿''' <summary>
+''' 内包クラス生成ユーティリティ
+''' </summary>
+''' <remarks>サンプル1：既存クラスの内包クラス用</remarks>
+Public Class ClassUtility
 
     ''' <summary>
-    ''' ClassA作成メソッド
+    ''' ClassA内包クラス作成メソッド
     ''' </summary>
     ''' <param name="target">対象インスタンス</param>
     ''' <returns>ICommonClassインスタンス</returns>
@@ -11,7 +15,7 @@
     End Function
 
     ''' <summary>
-    ''' ClassB作成メソッド
+    ''' ClassB内包クラス作成メソッド
     ''' </summary>
     ''' <param name="target">対象インスタンス</param>
     ''' <returns>ICommonClassインスタンス</returns>

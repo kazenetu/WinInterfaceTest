@@ -1,5 +1,10 @@
 ﻿Imports System.Reflection
 
+''' <summary>
+''' 既存クラス(ClassA、ClassB)用ジェネクスクラス
+''' </summary>
+''' <typeparam name="T">既存クラス</typeparam>
+''' <remarks>サンプル2：既存クラス用ジェネクスクラス用</remarks>
 Public Class ClassEx(Of T)
     Implements ICommonClass
 

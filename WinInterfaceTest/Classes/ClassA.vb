@@ -1,5 +1,5 @@
 ﻿''' <summary>
-''' サンプルクラスA
+''' 既存クラスA
 ''' </summary>
 Public Class ClassA
 

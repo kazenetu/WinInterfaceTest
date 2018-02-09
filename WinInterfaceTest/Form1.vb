@@ -39,7 +39,7 @@ Public Class Form1
     End Sub
 
     ''' <summary>
-    ''' Sample1:InterfaceのList
+    ''' サンプル1：既存クラスの内包クラス
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
@@ -64,7 +64,7 @@ Public Class Form1
     End Sub
 
     ''' <summary>
-    ''' Sample2:GenericのList
+    ''' サンプル2：既存クラス用ジェネクスクラス
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>

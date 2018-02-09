@@ -1,6 +1,7 @@
 ﻿''' <summary>
 ''' ClassEx作成ファクトリクラス
 ''' </summary>
+''' <remarks>サンプル2：既存クラス用ジェネクスクラス用</remarks>
 Public Class ClassEXFactory
 
     ''' <summary>
